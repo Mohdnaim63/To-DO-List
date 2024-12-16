@@ -86,3 +86,14 @@ li:hover{
 .delete-btn:hover{
     background-color:  #c82333;
 }
+@media only screen and (max-width:400px){
+    #addTaskButton{
+        margin-bottom: 20px;
+    }
+    #taskInput{
+        width: 100%;
+    }
+    .complete-btn, .delete-btn{
+        padding: 2px;
+    }
+}
