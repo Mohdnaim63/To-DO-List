@@ -1,0 +1,116 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+body {
+  font-family: Arial, sans-serif;
+  background-image: url("backgroud6.avif");
+  backdrop-filter: blur(7px);
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  overflow-y: hidden;
+}
+.todo-Container {
+  background-color: #f7eeeee0;
+  width: 100%;
+  max-width: 350px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  border-radius: 8px;
+  padding: 20px;
+  text-align: center;
+}
+h3 {
+  color: #333;
+  margin-bottom: 10px;
+  text-align: center;
+  font-size: 18px;
+  border-bottom: 2px solid #ddd;
+  padding-bottom: 5px;
+}
+#taskInput {
+  width: 75%;
+  padding: 10px;
+  font-size: 15px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  margin-bottom: 20px;
+  box-sizing: border-box;
+}
+#addTaskButton {
+  background-color: #a9929c;
+  padding: 10px;
+  border: 1px solid #ccc;
+  color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+#addTaskButton:hover {
+  background-color: #858276;
+}
+ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 10px 0;
+}
+li {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #856e76;
+  padding: 5px 10px;
+  padding-left: 10px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  text-align: center;
+  font-size: 16px;
+  margin: 10px 0px;
+  color: white;
+}
+li:hover {
+  background-color: #99849e;
+}
+.taskDone {
+  margin-right: 10px;
+  width: 25px;
+  height: 20px;
+  filter: brightness(0) invert(1);
+  cursor: pointer;
+}
+.taskDone:hover {
+  background: url("phone\ check.png");
+  background-size: cover;
+}
+.delete-btn {
+  margin-left: auto;
+  padding: 5px 10px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  color: white;
+}
+
+.delete-btn:hover {
+  background-color: lightgray;
+}
+@media only screen and (max-width: 400px) {
+  body {
+    height: 100vh;
+    overflow-y: hidden;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+  }
+  #addTaskButton {
+    margin-bottom: 20px;
+  }
+  #taskInput {
+    width: 100%;
+  }
+  .taskDone:hover {
+    background: url("phone\ check.png");
+    background-size: cover;
+  }
+}
